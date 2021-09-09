@@ -1,0 +1,19 @@
+cmake_minimum_required(VERSION 3.13)
+
+# Project setup
+project(SimpleWin VERSION 1.0)
+
+set_property(GLOBAL PROPERTY USE_FOLDERS ON)
+
+set(CMAKE_CXX_STANDARD 20)
+set(CMAKE_CXX_STANDARD_REQUIRED True)
+
+add_executable(SimpleWin src/main.cpp)
+
+add_subdirectory(AppCUI)
+
+target_include_directories(SimpleWin PUBLIC AppCUIMine)
+
+target_link_libraries(SimpleWin PUBLIC AppCUI)
+
+
