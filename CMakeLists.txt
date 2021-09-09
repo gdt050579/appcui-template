@@ -12,7 +12,7 @@ add_executable(SimpleWin src/main.cpp)
 
 add_subdirectory(AppCUI)
 
-target_include_directories(SimpleWin PUBLIC AppCUIMine)
+target_include_directories(SimpleWin PUBLIC AppCUI)
 
 target_link_libraries(SimpleWin PUBLIC AppCUI)
 
