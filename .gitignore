@@ -1,1 +1,9 @@
-build/
+[Dd]ebug/
+[Rr]elease/
+.vs/
+*.vcxproj.filters
+*.vcxproj.user
+.vscode
+build
+bin
+*.log
